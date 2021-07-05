@@ -4,17 +4,18 @@ import org.bson.types.Decimal128;
 
 public class Product {
     
-    private String id;
+    private int id;
     private String name;
-    private Decimal128 price;
-    private String currencyCode;
+    private Decimal128 value;
+    private String currency_code;
+    //private Object[] current_price;
 
-    public String getId()
+    public int getId()
     {
         return id;
     }
 
-    public void setId(String id)
+    public void setId(int id)
     {
         this.id = id;
     }
@@ -29,25 +30,38 @@ public class Product {
         this.name = name;
     }
 
-    public Decimal128 getPrice()
+    public Decimal128 getValue()
     {
-        return price;
+        return value;
     }
 
-    public void setPrice(Decimal128 price)
+    public void setValue(Decimal128 value)
     {
-        this.price = price;
+        this.value = value;
     }
 
-    public String getCurrencyCode()
+    public String getCurrency_code()
     {
-        return currencyCode;
+        return currency_code;
     }
 
-    public void setCurrencyCode(String currencyCode)
+    public void setCurrency_code(String currency_code)
     {
-        this.currencyCode = currencyCode;
+        this.currency_code = currency_code;
     }
+
+    // public Object[] getCurrent_price()
+    // {
+    //     return current_price;
+    // }
+
+    // public void setCurrent_price(Decimal128 value, String currency_code)
+    // {
+    //     this.value = value;
+    //     this. currency_code = currency_code;
+    //     this.current_price[0] = value;
+    //     this.current_price[1] = currency_code;
+    // }
 
     @Override
     public String toString()
@@ -55,8 +69,8 @@ public class Product {
         return String.format(
             "id: " + id + " " +
             "name: " + name + " " +
-            "price: " + price + " " +
-            "currencyCode: " + currencyCode
+            "value: " + value + " " +
+            "currency_code: " + currency_code
         );
     }
 
