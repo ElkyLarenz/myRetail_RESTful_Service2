@@ -51,7 +51,7 @@ public class DatabaseConnection implements CommandLineRunner {
 
     @Override
     public void run(String...args) throws Exception {
-      getPriceData();
+      //getPriceData();
     }
     
 }

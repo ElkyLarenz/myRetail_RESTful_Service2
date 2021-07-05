@@ -1,12 +1,15 @@
 package com.myretail.rest.classes;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import org.bson.types.Decimal128;
 
 public class PriceData {
 
+    @JsonIgnore
     private String id;
-    private Decimal128 price;
-    private String currencyCode;
+    private Decimal128 value;
+    private String currency_code;
 
     public String getId()
     {
@@ -18,24 +21,24 @@ public class PriceData {
         this.id = id;
     }
 
-    public Decimal128 getPrice()
+    public Decimal128 getValue()
     {
-        return price;
+        return value;
     }
 
-    public void setPrice(Decimal128 price)
+    public void setValue(Decimal128 value)
     {
-        this.price = price;
+        this.value = value;
     }
 
-    public String getCurrencyCode()
+    public String getCurrency_code()
     {
-        return currencyCode;
+        return currency_code;
     }
 
-    public void setCurrencyCode(String currencyCode)
+    public void setCurrency_code(String currency_code)
     {
-        this.currencyCode = currencyCode;
+        this.currency_code = currency_code;
     }
 
     @Override
@@ -43,8 +46,8 @@ public class PriceData {
     {
         return String.format(
             "id: " + id + " " +
-            "price: " + price + " " +
-            "currencyCode: " + currencyCode
+            "value: " + value + " " +
+            "currency_code: " + currency_code
         );
     }
     

@@ -8,7 +8,7 @@ public class Product {
     private String name;
     private Decimal128 value;
     private String currency_code;
-    //private Object[] current_price;
+    private PriceData current_price;
 
     public int getId()
     {
@@ -30,38 +30,37 @@ public class Product {
         this.name = name;
     }
 
-    public Decimal128 getValue()
+    public PriceData getCurrent_price()
     {
-        return value;
+        return current_price;
     }
 
-    public void setValue(Decimal128 value)
+    public void setCurrent_price(PriceData current_price)
     {
-        this.value = value;
+        this.current_price = current_price;
     }
 
-    public String getCurrency_code()
-    {
-        return currency_code;
-    }
-
-    public void setCurrency_code(String currency_code)
-    {
-        this.currency_code = currency_code;
-    }
-
-    // public Object[] getCurrent_price()
+    // public Decimal128 getValue()
     // {
-    //     return current_price;
+    //     return value;
     // }
 
-    // public void setCurrent_price(Decimal128 value, String currency_code)
+    // public void setValue(Decimal128 value)
     // {
     //     this.value = value;
-    //     this. currency_code = currency_code;
-    //     this.current_price[0] = value;
-    //     this.current_price[1] = currency_code;
     // }
+
+    // public String getCurrency_code()
+    // {
+    //     return currency_code;
+    // }
+
+    // public void setCurrency_code(String currency_code)
+    // {
+    //     this.currency_code = currency_code;
+    // }
+
+
 
     @Override
     public String toString()
