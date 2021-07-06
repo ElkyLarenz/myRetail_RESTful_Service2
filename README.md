@@ -23,7 +23,7 @@ Database
 ![image](https://user-images.githubusercontent.com/33266684/124628783-6fd15980-de46-11eb-9c8f-00f6c8ac38c6.png)
 
 Pull of database data
-![image](https://user-images.githubusercontent.com/33266684/124628451-179a5780-de46-11eb-9ce9-51353d9f98f4.png)
+![image](https://user-images.githubusercontent.com/33266684/124632044-9775f100-de49-11eb-9c21-c3c6f7a9ae51.png)
 
 Json data on retail service site of a product with a tcin id.
 ![image](https://user-images.githubusercontent.com/33266684/124629470-187fb900-de47-11eb-9f2c-9837f3a59529.png)
