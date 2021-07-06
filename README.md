@@ -10,11 +10,11 @@ In total get ID, Name, current_price, and currency_code
 BONUS: Accepts an HTTP PUT request at the same path (/products/{id}), containing a JSON request body similar to the GET response, and updates the product’s price in the data store. 
 
 # Technologies
-VS Code
-Java
-Maven Wrapper
-Spring Boot
-Tomcat
+VS Code,
+Java,
+Maven Wrapper,
+Spring Boot,
+Tomcat,
 MongoDB Atlas
 
 # Screenshots of everything working
