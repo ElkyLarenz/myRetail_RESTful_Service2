@@ -59,7 +59,7 @@ public class MyRetailInteraction implements CommandLineRunner {
         return product;
     }
 
-    @GetMapping(value="product/{id}")
+    @GetMapping(value="products/{id}")
     private Product combineData(@PathVariable("id") String tcin_id)
     {
         //String tcin_id = "13860424";
