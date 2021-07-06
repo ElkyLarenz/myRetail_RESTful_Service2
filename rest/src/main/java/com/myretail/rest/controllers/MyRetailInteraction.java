@@ -2,6 +2,9 @@ package com.myretail.rest.controllers;
 
 import java.util.Map;
 import java.util.List;
+import org.json.JSONObject;
+
+import com.myretail.rest.classes.PriceRepository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.myretail.rest.classes.Product;
@@ -12,14 +15,20 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 
 @RestController
 public class MyRetailInteraction implements CommandLineRunner {
     
+    @Autowired
+	private PriceRepository repository;
     DatabaseConnection dbc = new DatabaseConnection();
     String globalURL;
 
@@ -72,6 +81,21 @@ public class MyRetailInteraction implements CommandLineRunner {
         
         return product;
     }
+
+
+    //BONUS
+    // @PutMapping(value="product/{id}")
+    // private @ResponseBody String updateDataPost(@PathVariable("id") String tcin_id)
+    // {
+    //     String result="";
+    //     PriceData priceData = new PriceData();
+    //     JSONObject myObject = new JSONObject();
+    //     //priceData = repository.findById(tcin_id); ?Optional<PriceData>
+        
+    //     result = myObject.toString();
+    //     System.out.println(result);
+    //     return result;
+    // }
 
     @Override
     public void run(String...args) throws Exception {

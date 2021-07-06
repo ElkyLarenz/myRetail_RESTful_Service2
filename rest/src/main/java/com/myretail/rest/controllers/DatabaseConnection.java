@@ -47,7 +47,18 @@ public class DatabaseConnection implements CommandLineRunner {
 
       return allPriceData;
     }
-    
+
+    // public PriceData setPriceData()
+    // {
+    //   //maybe take in PriceData object, and json data parameters
+    //   //match by id 
+    //   //update price data price 
+    //   //store changes
+    //   PriceData PriceData = new PriceData();
+      
+    //   return PriceData;
+
+    // }
 
     @Override
     public void run(String...args) throws Exception {

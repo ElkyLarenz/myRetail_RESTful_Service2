@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})//gets rid of mongoDB open socket error
+@EnableAutoConfiguration //(exclude={MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})//gets rid of mongoDB open socket error
 public class RestApplication {
 
 	public static void main(String[] args) {
