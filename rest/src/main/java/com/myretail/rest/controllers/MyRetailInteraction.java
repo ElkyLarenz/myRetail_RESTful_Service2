@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.List;
 import org.json.JSONObject;
 
-import com.myretail.rest.classes.PriceRepository;
+//import com.myretail.rest.classes.PriceRepository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.myretail.rest.classes.Product;
@@ -27,8 +27,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RestController
 public class MyRetailInteraction implements CommandLineRunner {
     
-    @Autowired
-	private PriceRepository repository;
+    // @Autowired
+	// private PriceRepository repository;
     DatabaseConnection dbc = new DatabaseConnection();
     String globalURL;
 
