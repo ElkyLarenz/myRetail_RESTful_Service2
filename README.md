@@ -1,7 +1,7 @@
 # myRetail_RESTful_Service2
 
 # Purpose
-create a RESTful service that can retrieve product and price details by ID. 
+Create a RESTful service that can retrieve product and price details by ID. 
 # Functions
 Responds to an HTTP GET request at /products/{id} and delivers product data as JSON (where {id} will be a number.
 Performs an HTTP GET to retrieve the product name from an external API. 
