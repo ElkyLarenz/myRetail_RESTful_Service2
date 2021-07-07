@@ -31,6 +31,9 @@ Json data on retail service site of a product with a tcin id.
 After matching by id with PriceData stored in the database a page is returned with the Product and PriceData
 ![image](https://user-images.githubusercontent.com/33266684/124630682-49acb900-de48-11eb-9f8e-2e146947e56b.png)
 
+Update after interview diagram of interactions.
+[diagram.pdf](https://github.com/ElkyLarenz/myRetail_RESTful_Service2/files/6779822/diagram.pdf)
+
 
 # Sources
 https://www.youtube.com/watch?v=uq4GjRF_860
